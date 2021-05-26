@@ -327,7 +327,7 @@ dd {
   margin: 0 auto;
   margin-bottom: 99px;
 }
-.contact_btn:hover {
+.contact_btn button:hover {
   background: rgb(209, 207, 209);
 }
 
