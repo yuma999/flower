@@ -1,0 +1,342 @@
+html{
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  /* height: 5154px; */
+  background: #FFFFFF 0% 0%no-repeat padding-box;
+  opacity: 1;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+.header,.concept,#work,.florist,#info {
+  margin-right: 160px;
+  margin-left: 160px;
+}
+
+
+/* header */
+#header {
+  background-image: url(../img/header.png);
+  height: 620px;
+  width: 100%;
+  color: #FFFFFF;
+}
+.header_nav_wrapper {
+  border: 1px dashed;
+  width: 960px; 
+  height: 64px;
+  display: flex;
+}
+.header_logo {
+  height: 36px;
+  text-align: left;
+  font: normal normal normal 36px/50px Myriad Pro;
+  padding-top: 19px;
+  padding-bottom: 9px;
+}
+.content-wrapper h1 {
+  font: normal normal normal 120px/168px Myriad Pro;
+  margin: 0;
+  /* 上下左右にできれば。。。 */
+  margin-top: 136px;
+}
+.content-wrapper p {
+  font: normal normal normal 16px/27px Hiragino Kaku Gothic ProN;
+  margin: 0;
+}
+
+
+
+
+.hamburger-menu:hover {
+  --hamburger-menu-border-color: #b8b0b0;
+}
+/* ハンバーガー */
+:root {
+  --hamburger-menu-size: 36px; /* メニューの大きさ */ 
+  --hamburger-menu-padding: 12px;  
+  --hamburger-menu-border-px: 3px; /* 線の太さ */
+  --hamburger-menu-border-color: #FFFFFF; /* 線の色 */
+  --hamburger-menu-transition: 0.3s; /* アニメーション秒数 */
+}
+
+
+.hamburger-menu {
+  cursor: pointer;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  margin-left: auto;
+}
+
+
+.hamburger-menu-line {
+  position: absolute;
+  transition: var(--hamburger-menu-transition);
+  width: calc(100% - var(--hamburger-menu-padding) * 2);
+  height: var(--hamburger-menu-border-px);
+  background-color: var(--hamburger-menu-border-color);
+}
+
+
+.line-top {
+  top: var(--hamburger-menu-padding);
+  left: var(--hamburger-menu-padding);
+}
+
+.line-middle {
+  top: calc(50% - var(--hamburger-menu-border-px)/2);
+  left: var(--hamburger-menu-padding);
+}
+
+.line-bottom {
+  bottom: var(--hamburger-menu-padding);
+  left: var(--hamburger-menu-padding);
+}
+
+
+.hamburger-menu-active > .line-top {
+  top: calc(50% - var(--hamburger-menu-border-px)/2);
+  transform: rotate(45deg);
+}
+
+.hamburger-menu-active > .line-middle {
+  width: 0;
+  height: 0;
+  left: var(--hamburger-menu-padding);
+}
+
+.hamburger-menu-active > .line-bottom {
+  top: calc(50% - var(--hamburger-menu-border-px)/2);
+  transform: rotate(-45deg);
+}
+
+
+/* cocept */
+#concept {
+  background: linear-gradient(#FFFFFF 60%,#EDEDED 40%);
+}
+
+.concept h1 {
+  font: normal normal bold 36px/55px Poppins;
+  margin: 0;
+  margin-top: 80px;
+}
+/* hrタグが中央に行かない */
+.concept p {
+  font: normal normal normal 16px/22px Myriad Pro;
+  margin: 0;
+  margin-top: 57px;
+}
+.concept img {
+  height: 400px;
+  margin-top: 40px;
+  margin-bottom: 102px;
+}
+
+
+
+/* work */
+.work h1 {
+  font: normal normal bold 36px/55px Poppins;
+  color: #333333;
+  margin: 0;
+  margin-top: 80px;
+}
+.work p {
+  font: normal normal normal 16px/22px Myriad Pro;
+  color: #2B2B2B;
+  margin-top: 57px;
+  margin-bottom: 40px;
+}
+.work_content {
+  width: 960px;
+  height: 1609px;
+  column-count: 2;
+  text-align: left;
+}
+.work_content ul {
+  width: 420px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.work_content li {
+  font: normal normal bold 24px/40px Poppins;
+  color: #333333;
+}
+.work_content p {
+  font: normal normal normal 16px/28px Myriad Pro;
+  color: #2B2B2B;
+  margin: 0;
+}
+
+.gift img {
+  height: 420px;
+}
+.wedding img {
+  height: 630px;
+  margin-top: 80px;
+}
+.decoration {
+  float: right;
+}
+.decoration img {
+  height: 630px;
+  margin-top: 120px;
+}
+.for {
+  float: right;
+}
+.for img {
+  height: 400px;
+  margin-top: 80px;
+}
+
+/* florist */
+#florist {
+  background: linear-gradient(#EDEDED 60%,#FFFFFF 40%);
+}
+.florist {
+  width: 960px;
+  height: 651px;
+}
+.florist_pro h1 {
+  font: normal normal bold 36px/55px Poppins;
+  color: #333333;
+  margin: 0;
+  padding-top: 80px;
+}
+.florist_pro p {
+  font: normal normal normal 16px/22px Myriad Pro;
+  color: #2B2B2B;
+  margin: 0;
+  margin-top: 57px;
+  margin-bottom: 40px;
+}
+.florist_staff {
+  display: flex;
+}
+.florist_staff ul {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.florist_staff img {
+  width: 300px;
+  height: 180px;
+}
+.florist_staff li {
+  font: normal normal bold 24px/40px Poppins;
+  color: #333333;
+}
+.florist_staff p {
+  font: normal normal normal 16px/22px Myriad Pro;
+  color: #2B2B2B;
+  margin: 0;
+}
+
+/* info */
+#info {
+  width: 960px;
+  height: 686px;
+}
+.info_title h1 {
+  font: normal normal bold 36px/55px Poppins;
+  color: #333333;
+  margin: 0;
+  margin-top: 80px;
+  margin-bottom: 25px;
+}
+.info_title p {
+  font: normal normal normal 16px/22px Myriad Pro;
+  color: #2B2B2B;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.info_access {
+  display: flex;
+  height: -60px;
+}
+.info_img img {
+  height: 320px;
+  width: 480px;
+}
+.info_access ul {
+  list-style: none;
+}
+.info_text {
+  font: normal normal normal 16px/22px Myriad Pro;
+  color: #2B2B2B;
+  width: 432px;
+  height: 320px;
+  margin: 32px 0 32px 48px;
+  text-align: left;
+}
+dl {
+  display: flex;
+  margin: 0;
+}
+dt {
+  width: 64px;
+  height: 16px;
+  padding-right: 15px;
+}
+dd {
+  margin: 0;
+  margin: 5px 0;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  border-left: 1px solid #2B2B2B;
+}
+
+
+/* contact */
+#contact {
+  background: url(../img/contact_us.png);
+  width: 1280px;
+  height: 450px;
+}
+#contact h1 {
+  font: normal normal bold 36px/55px Poppins;
+  color: #333333;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 28px;
+
+}
+
+#contact p {
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+.contact_btn button {
+  width: 360px;
+  height: 80px;
+  padding: 0;
+  font: normal normal normal 20px/28px Myriad Pro;
+  color: #2B2B2B;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  margin: 0 auto;
+  margin-bottom: 99px;
+}
+.contact_btn:hover {
+  background: rgb(209, 207, 209);
+}
+
+
+
+
+/* footer */
+footer p {
+  font: normal normal normal 16px/22px Myriad Pro;
+  color: #2B2B2B;
+  margin: 12px 0;
+}
